@@ -1,13 +1,20 @@
-# === ASP.NET Core / Visual Studio 預設忽略 ===
+# ======================================
+# 🌐 ASP.NET Core / Visual Studio 預設忽略
+# ======================================
 bin/
 obj/
+.vs/
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
-.vs/
 
-# === 發佈 / 建置輸出 ===
+# ======================================
+# 🚀 發佈 / 建置輸出
+# ======================================
+publish/
+wwwroot/
+logs/
 *.exe
 *.dll
 *.pdb
@@ -16,24 +23,43 @@ obj/
 *.dbmdl
 *.bak
 *.FileListAbsolute.txt
-publish/
-wwwroot/
-logs/
 
-# === 系統檔案 ===
+# ======================================
+# 💻 系統暫存與索引檔
+# ======================================
 .DS_Store
 Thumbs.db
 ehthumbs.db
 desktop.ini
 
-# === 機密設定檔 ===
+# ======================================
+# 🔒 機密設定檔（⚠️ 不應上傳）
+# ======================================
+# 僅保留正式版 appsettings.json，其餘全部忽略
 appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+appsettings.Staging.json
 secrets.json
-appsettings*.json
-*.config
 *.secrets.json
-
-
-# === 其他工具 ===
 *.local.json
 .env
+.env.*
+
+# ======================================
+# 🧩 其他開發工具
+# ======================================
+# Rider / ReSharper
+.idea/
+*.DotSettings.user
+
+# VS Code
+.vscode/
+.history/
+
+# NuGet / 暫存 / 其他
+*.nupkg
+*.snupkg
+*.swp
+*.tmp
+*.temp
