@@ -1,0 +1,39 @@
+# === ASP.NET Core / Visual Studio 預設忽略 ===
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+
+# === 發佈 / 建置輸出 ===
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.dbmdl
+*.bak
+*.FileListAbsolute.txt
+publish/
+wwwroot/
+logs/
+
+# === 系統檔案 ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# === 機密設定檔 ===
+appsettings.Development.json
+secrets.json
+appsettings*.json
+*.config
+*.secrets.json
+
+
+# === 其他工具 ===
+*.local.json
+.env
